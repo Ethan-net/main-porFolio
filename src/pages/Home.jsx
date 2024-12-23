@@ -18,12 +18,13 @@ export default function Home() {
     <div className='relative'>
       { sidebar && <Sidebar />}
       <Heropage />
+      <Techskill />
       {about && <AboutMe />}
       {myWork && <MyWorks />}
       {contact && <Contact />}
       <MeHome />
       <hr />
-      <Techskill />
+     
     </div>
   )
 }

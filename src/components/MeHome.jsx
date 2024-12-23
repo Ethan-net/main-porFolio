@@ -11,16 +11,6 @@ export default function MeHome() {
             Let’s get to know <br /> about me better
           </h1>
           <div className="mt-4">
-            <p className="text-sm md:text-base text-gray-700">
-              I'm a passionate front-end developer with a growing interest in blockchain
-              technology, and I’m currently expanding my skill set in backend development using Node.js.
-              My background in creating dynamic and user-centered interfaces has provided me with a strong foundation
-              to build robust applications, while my recent backend experience is helping me approach projects more holistically.
-              I’m excited about the opportunity to contribute my skills and continue learning in a collaborative and innovative environment.
-            </p>
-            <button className="bg-yellow-600 text-white py-2 px-4 rounded-full mt-5 text-xs md:text-sm">
-              Download my CV
-            </button>
           </div>
         </div>
 

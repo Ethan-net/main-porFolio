@@ -1,34 +1,55 @@
 import React from 'react'
 import '../App.css'
-import myImg from '../assets/images/bgremove.png'
+import myImg from '../assets/images/mesmiling.jpeg'
 import arrow from '../assets/icons/arrow.svg'
+import download from '../assets/icons/download.png'
+import { Link } from 'react-router-dom';
 
 export default function Heropage() {
   return (
-    <div className="hero-bg  flex items-center  bg-slate-200"> 
+    <div className="hero-bg items-center"> 
+      <div className='bg-black/80'>
+        <section className='justify-center p-10'>
         <div className="list-wrapper text-center items-center">
-          <h1 className="text-black text-lg sm:text-xl md:text-2xl mb-10">
+          <h1 className="text-white text-lg sm:text-xl md:text-2xl mb-10">
             Hi...
           </h1>
-          <h1 className="text-black text-lg sm:text-xl md:text-2xl">
+          <h1 className="text-white text-lg sm:text-xl md:text-2xl my-5">
             
               I am{"  "}
-              <strong className="text-yellow-600 text-[30px] ">Ajibola Korede</strong>
+              <strong className="text-yellow-600 text-[30px] ">Ajibola Korede Ayo</strong>
             
           </h1>
-          <p className='text-slate-500 font-bold text-sm'>Frond-End / Back-End Web Developer</p>
-      
-        
-          <button className="bg-yellow-600 py-3 mx-auto my-10 px-6 rounded-full shadow-xl hover:scale-110 hover:duration-700 text-white text-sm md:text-base flex items-center ">
-            Explore works
-            <img src={arrow} alt="Arrow" className="inline ml-2 w-4 h-4" />
+          <p className='text-slate-300 font-bold text-sm'>Front-End/Back-End Web Developer</p>
+          <div className='flex gap-4  my-5 justify-center'>
+          <Link to= 'https://www.linkedin.com/in/korede-ajibola-2a53981b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' >
+          <img className='w-10' src="https://cdn0.iconfinder.com/data/icons/social-media-free-17/32/linkedin_social_media_logo-1024.png" alt="" />
+          </Link>
+          <Link to = 'https://www.facebook.com/share/k2nrqQQfyHDHrttP/?mibextid=qi2Omg' >
+          <img className='w-10' src="https://cdn0.iconfinder.com/data/icons/social-media-free-17/32/facebook_social_media_logo-1024.png" alt="" />
+          </Link>
+          <Link to= 'https://www.instagram.com/_ethanakorede?igsh=YzljYTk1ODg3Zg=='>
+          <img className='w-10' src="https://cdn0.iconfinder.com/data/icons/social-media-free-17/32/instagram_social_media_logo-1024.png" alt="" />
+          </Link>
+          <Link to= 'https://x.com/Ethannets?t=k3VZLuV0DOd5hYH5LdOVwA&s=09' >
+          <img className='w-10' src="https://cdn0.iconfinder.com/data/icons/social-media-free-17/32/twitter_social_media_logo-1024.png" alt="" />
+          </Link>
+          </div>
+      </div>
+        <div className="mt-4 justify-center w-[80%] mx-auto">
+          <p className="text-sm md:text-base text-slate-300">
+            I'm a passionate front-end developer with a growing interest in blockchain
+            technology, and I’m currently expanding my skill set in backend development using Node.js.
+            My background in creating dynamic and user-centered interfaces has provided me with a strong foundation
+            to build robust applications, while my recent backend experience is helping me approach projects more holistically.
+          </p> 
+          <button className="bg-yellow-600  text-black py-2 px-4 rounded-full mt-5 text-xs md:text-sm mb-5">
+            <p>Download my CV </p> <img className='w-5 inline' src={download} alt="" />
           </button>
+        </div>
+    </section>
+      </div>
        
-      </div>
-      <div className='bg-black pl-64 pt-20 hero-bgimg justify-items-center '>
-
-      <img className='w-[30vw] mx-auto' src={myImg} alt="myprof" />
-      </div>
     </div>
   );
 }

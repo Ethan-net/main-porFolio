@@ -2,13 +2,16 @@ import { useContext, useEffect, useState } from 'react';
 import Logo from './Logo';
 import { NavContext } from '../context/Nav-context';
 import '../App.css';
-import hambugmenu from '../assets/icons/hamburgmenu.svg'
+import hambugmenu from '../assets/icons/hamburgwhite.svg'
+
 
 export default function Nav() {
   const { about, setAbout } = useContext(NavContext);
   const { myWork, setMyWork } = useContext(NavContext);
   const { contact, setContact } = useContext(NavContext);
   const {sidebar, setSidebar} = useContext(NavContext)
+  const { hamburger, setHamburger } = useContext(NavContext)
+  const { cancel, setCancel } = useContext(NavContext)
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -52,31 +55,37 @@ export default function Nav() {
       className={`fixed top-0 w-full z-50 transition-colors duration-300 ${scrolled ? 'bg-black shadow-md' : 'bg-transparent'
         }`}
     >
-      <img onClick={()=> setSidebar(!sidebar)} src={hambugmenu} alt="" className={` w-16 hamburg ${scrolled ? 'to-black' : 'to-white'}`}/>
+     
+
+      
+      {hamburger && <img onClick={() => setSidebar(!sidebar) || setHamburger(!hamburger) || setCancel(!cancel)} src={hambugmenu} alt="" className= "w-7 hamburg ml-3 mt-3" />}
+
+    
+      
       <div className="flex justify-between w-[80%] mx-auto py-4 items-center">
 
         <Logo />
-        <ul className="flex gap-10 items-center text-white text-[10px]">
+        <ul className="flex gap-10 items-center text-[10px]">
           <button
-            onClick={() => setAbout(!about)}
-            className="hover:text-yellow-600"
+            onClick={() => setAbout(!about) || setCancel(!cancel) }
+            className="hover:text-yellow-600  text-slate-100 "
           >
             About Me
           </button>
           <button
-            onClick={() => setMyWork(!myWork)}
+            onClick={() => setMyWork(!myWork) || setCancel(!cancel) }
             className="hover:text-yellow-600"
           >
-            My Work
+            Projects
           </button>
           <button
-            onClick={() => setContact(!contact)}
+            onClick={() => setContact(!contact) || setCancel(!cancel) }
             className="border-[1px] border-yellow-600 py-3 px-7 rounded-full hover:text-black hover:bg-yellow-600 text-white"
           >
             Contact
           </button>
         </ul>
-      </div>
+      </div>  
     </div>
   );
 }
