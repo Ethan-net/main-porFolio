@@ -27,7 +27,7 @@ body {
   left: 50%;
   width: 250px;
   height: 300px;
-  background: rgb(82, 82, 0);
+  background:#c98b04;
   transform: translateX(-50%) translateY(calc(50px * var(--i))) rotate(40deg) skew(-20deg, -10deg) scale(0.6);
   box-shadow: 25px 25px 100px rgba(0,0,0,0.2);
   z-index: calc(-1 * var(--i));

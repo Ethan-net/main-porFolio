@@ -11,25 +11,25 @@ export default function Techskill() {
                             <li className=' p-7 rounded-md shadow-xl card card1' style={{ "--i": "-3" }}>
                                 <div className='flex-col justify-items-center'>
                                     <img className='w-[10vw] animate-spin' src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-1024.png" alt="" />
-                                    <p className='text-sm font-bold text-yellow-600'>React.js</p>
+                                    <p className='text-sm font-bold text-white'>React.js</p>
                                 </div>
                             </li>
                             <li className=' p-7 rounded-md shadow-xl card card2' style={{"--i": "-2.2"}}>
                                 <div className='flex-col justify-items-center'>
                                     <img className='w-[10vw]' src="https://cdn3.iconfinder.com/data/icons/inficons/512/CSS3.png" alt="" />
-                                    <p className='text-sm font-bold text-yellow-600' >Css</p>
+                                    <p className='text-sm font-bold text-white' >Css</p>
                                 </div>
                             </li>
                             <li className='  p-7 rounded-md shadow-xl card card3' style={{ "--i": "-1.4" }}>
                                 <div className='flex-col justify-items-center'>
                                     <img className='w-[10vw]' src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-1024.png" alt="" />
-                                    <p className='text-sm font-bold text-yellow-600'>JavaScript</p>
+                                    <p className='text-sm font-bold text-white'>JavaScript</p>
                                 </div>
                             </li>
                             <li className=' p-7 rounded-md shadow-xl card card4' style={{ "--i": "-0.6" }}>
                                 <div className='flex-col justify-items-center'>
                                     <img className='w-[10vw]' src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-1024.png" alt="" />
-                                    <p className='text-sm font-bold text-yellow-600'>HTML5</p>
+                                    <p className='text-sm font-bold text-white'>HTML5</p>
                                 </div>
                             </li>
                         </ul>
@@ -66,25 +66,25 @@ export default function Techskill() {
                             <li className=' p-7 rounded-md shadow-xl'>
                                 <div className='flex-col justify-items-center'>
                                     <img className='w-[10vw] animate-spin' src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-1024.png" alt="" />
-                                    <p className='text-sm font-bold text-yellow-600'>React.js</p>
+                                    <p className='text-sm font-bold text-white'>React.js</p>
                                 </div>
                             </li>
                             <li className=' p-7 rounded-md shadow-xl'>
                                 <div className='flex-col justify-items-center'>
                                     <img className='w-[10vw]' src="https://cdn3.iconfinder.com/data/icons/inficons/512/CSS3.png" alt="" />
-                                    <p className='text-sm font-bold text-yellow-600' >Css</p>
+                                    <p className='text-sm font-bold text-white' >Css</p>
                                 </div>
                             </li>
                             <li className='  p-7 rounded-md shadow-xl '>
                                 <div className='flex-col justify-items-center'>
                                     <img className='w-[10vw]' src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-1024.png" alt="" />
-                                    <p className='text-sm font-bold text-yellow-600'>JavaScript</p>
+                                    <p className='text-sm font-bold text-white'>JavaScript</p>
                                 </div>
                             </li>
                             <li className=' p-7 rounded-md shadow-xl' >
                                 <div className='flex-col justify-items-center'>
                                     <img className='w-[10vw]' src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-1024.png" alt="" />
-                                    <p className='text-sm font-bold text-yellow-600'>HTML5</p>
+                                    <p className='text-sm font-bold text-white'>HTML5</p>
                                 </div>
                             </li>
                         </ul>

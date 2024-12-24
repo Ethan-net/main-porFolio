@@ -7,6 +7,8 @@ import AboutMe from './AboutMe'
 import MyWorks from './MyWorks'
 import Contact from './Contact'
 import Sidebar from '../components/sidebar'
+import Logo from '../components/Logo'
+import Footer from '../components/footer'
 
 export default function Home() {
 
@@ -23,6 +25,7 @@ export default function Home() {
       {myWork && <MyWorks />}
       {contact && <Contact />}
       <MeHome />
+      <Footer/>
       <hr />
      
     </div>

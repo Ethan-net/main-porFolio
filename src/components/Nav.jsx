@@ -1,17 +1,18 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import Logo from './Logo';
 import { NavContext } from '../context/Nav-context';
 import '../App.css';
 import hambugmenu from '../assets/icons/hamburgwhite.svg'
+import { Link } from 'react-router-dom';
 
 
 export default function Nav() {
   const { about, setAbout } = useContext(NavContext);
   const { myWork, setMyWork } = useContext(NavContext);
-  const { contact, setContact } = useContext(NavContext);
   const {sidebar, setSidebar} = useContext(NavContext)
   const { hamburger, setHamburger } = useContext(NavContext)
   const { cancel, setCancel } = useContext(NavContext)
+  const sectionRef = useRef(NavContext)
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -49,6 +50,13 @@ export default function Nav() {
 
   },[])
 
+  const scrollToSection = () => {
+    sectionRef.current.scrollIntoView({
+      behavior: "smooth", // Smooth scrolling
+      block: "start",     // Align to the top of the viewport
+    });
+  };
+
   return (
     <div
       id="navbar"
@@ -78,12 +86,10 @@ export default function Nav() {
           >
             Projects
           </button>
-          <button
-            onClick={() => setContact(!contact) || setCancel(!cancel) }
+        
+          <button onClick={scrollToSection}
             className="border-[1px] border-yellow-600 py-3 px-7 rounded-full hover:text-black hover:bg-yellow-600 text-white"
-          >
-            Contact
-          </button>
+          >Contact</button>
         </ul>
       </div>  
     </div>

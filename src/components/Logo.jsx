@@ -1,10 +1,8 @@
 import React from 'react'
-import profile from '../assets/images/profile.jpeg'
+import profile from '../assets/icons/mylogo.svg'
 
 export default function Logo() {
   return (
-    <div className='flex gap-4 items-center'>
-    <img className='w-7 rounded-full h-8 animate-bounce' src={profile} alt="" />
-    </div>
+    <img className='w-20' src={profile} alt="" />
   )
 }

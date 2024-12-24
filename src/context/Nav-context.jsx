@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useRef, useState } from 'react'
 
 export const NavContext = createContext()
 
@@ -9,9 +9,10 @@ export default function NavProvider({children}) {
     const [sidebar, setSidebar] = useState(false)
     const [hamburger, setHamburger] = useState(true)
     const [cancel, setCancel] = useState(false)
+    const sectionRef = useRef(null);
 
   return (
-    <NavContext.Provider value={{ about, setAbout, hamburger, setHamburger, myWork, setMyWork, contact, setContact, sidebar, setSidebar, cancel, setCancel }} >
+    <NavContext.Provider value={{ about, setAbout, hamburger, setHamburger, myWork, setMyWork, sectionRef, contact, setContact, sidebar, setSidebar, cancel, setCancel }} >
     {children}
    </NavContext.Provider>
   )

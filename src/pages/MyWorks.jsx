@@ -3,8 +3,8 @@ import '../App.css'
 import { NavContext } from '../context/Nav-context'
 import powerhousehome from '../../src/assets/images/project/powerhouse1.png'
 import foodshop from '../../src/assets/images/project/foodshop.png'
-import powerhouseres from '../../src/assets/images/project/powerhouse3.png'
-import powerhouseprod from '../../src/assets/images/project/powerhouseprod.png'
+import cryptop from '../../src/assets/images/project/cryptop.png'
+import electromart from '../../src/assets/images/project/electromart.png'
 import { Link } from 'react-router-dom'
 
 export default function MyWorks() {
@@ -45,20 +45,25 @@ export default function MyWorks() {
             <hr />
             <div className='my-10'>
               <img src={foodshop} alt="" />
-              <p>A simple food shoping site where user can simply add desired food item to cart and check out\</p>
+              <p>A simple food shoping site where user can simply add desired food item to cart and check out</p>
               <Link to='#'>
                 <button className='text-white bg-yellow-600 p-2 px-4 mt-3 rounded-3xl'>explore site</button>
               </Link>
             </div>
             <hr />
             <div className='my-10'>
-            <img src={powerhouseres} alt="" />
+            <img src={cryptop} alt="" />
+              <h1 className='font-bold'>Cryptop</h1>
+              <p>Cryptop is a blockchain-based escrow P2P platform designed to facilitate secure cryptocurrency transactions between users. The platform connects buyers and sellers directly, ensuring transparency and trust through a decentralized system. By leveraging blockchain technology, Cryptop guarantees transaction integrity and prevents fraud, with funds securely held in escrow until both parties fulfill their obligations. Whether you're buying or selling crypto, Cryptop provides a seamless, efficient, and user-friendly experience for peer-to-peer trading.</p>
               <Link to ="#">
                 <button className='text-white bg-yellow-600 p-2 px-4 mt-3 rounded-3xl'>explore site</button>
               </Link>
             </div>
+            <hr />
             <div className='my-10'>
-            <img src={powerhouseprod} alt="" />
+            <img src={electromart} alt="" />
+              <h1 className='font-bold'>Electromart</h1>
+              <p>Electromart is a user-friendly online shop designed for easy and secure electronic purchases. Users can browse a wide range of products, add items to their cart, proceed to checkout, and complete payments effortlessly. The platform prioritizes convenience and efficiency, ensuring a seamless shopping experience for all customers. Whether you're buying the latest gadgets or essential electronics, Electromart makes it simple and reliable.</p>
             <Link>
                 <button className='text-white bg-yellow-600 p-2 px-4 mt-3 rounded-3xl'>explore site</button>
             </Link>
