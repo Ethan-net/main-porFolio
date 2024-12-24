@@ -23,6 +23,7 @@ body {
 }
 .card-container .card{
   position: absolute;
+  z-index: 1000;
   top: 50px;
   left: 50%;
   width: 250px;
